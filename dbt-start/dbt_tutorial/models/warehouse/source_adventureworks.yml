@@ -1,12 +1,13 @@
 version: 2
 
 sources:
+# sales schema
   - name: sales
     database: Adventureworks
     tables:
       - name: salesorderheader
       - name: salesorderdetail
-
+# production schema
   - name: production
     database: Adventureworks
     tables:

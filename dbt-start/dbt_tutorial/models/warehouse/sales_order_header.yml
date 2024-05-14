@@ -3,6 +3,10 @@ version: 2
 models:
   - name: sales_order_header
     description: "Sales Order Header table"
+    #tests:
+    #  - greater_than_column:
+    #      column_name: duedate
+    #      greater_than_column_name: orderdate
     columns:
       - name: salesorderid
         description: "sales order id"
@@ -15,12 +19,18 @@ models:
 
       - name: duedate
         description: ""
+        tests:
+          - greater_than_column:
+              greater_than_column_name: orderdate
 
       - name: shipdate
         description: ""
 
       - name: status
         description: ""
+        #tests:
+        #  - accepted_values:
+        #      values: [ 1,2,3,4 ]
 
       - name: onlineorderflag
         description: ""
