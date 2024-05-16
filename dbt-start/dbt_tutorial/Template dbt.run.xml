@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="true" type="DbtRunConfiguration" factoryName="DbtRunConfiguration">
+    <option name="dbtCommand" value="run" />
+    <module name="dbt-start-project" />
+    <method v="2" />
+  </configuration>
+</component>

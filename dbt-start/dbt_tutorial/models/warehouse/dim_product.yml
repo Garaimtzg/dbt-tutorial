@@ -2,9 +2,9 @@ version: 2
 
 models:
   - name: dim_product
-   # config:
-   #   contract:
-   #     enforced: true
+    #config:
+    #  contract:
+    #    enforced: true
     description: ""
     columns:
       - name: productid
