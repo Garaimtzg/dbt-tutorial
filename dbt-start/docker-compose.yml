@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  dbt_service:
+    build: .
+    volumes:
+      - ./dbt_tutorial:/dbt_tutorial_project
+      - ./profiles.yml:/root/.dbt/profiles.yml
+    working_dir: /dbt_tutorial_project
+    command: ["dbt", "build"]
+    depends_on:
+      - db
+
+  db:
+    build: ./AdventureWorks-for-Postgres-Docker
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - '5432:5432'

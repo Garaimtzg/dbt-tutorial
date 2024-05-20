@@ -1,0 +1,15 @@
+[0m08:55:35.169205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78b42f5e3190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78b42dd96b00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78b42dd960b0>]}
+
+
+============================== 08:55:35.171904 | 004db267-b5bc-496e-9fc1-42f4c8edd3d5 ==============================
+[0m08:55:35.171904 [info ] [MainThread]: Running with dbt=1.5.11
+[0m08:55:35.172391 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/110885@TRI.LAN/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m08:55:35.172807 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/110885@TRI.LAN/PycharmProjects/dbt-start-project/AdventureWorks-for-Postgres-Docker/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m08:55:35.173511 [debug] [MainThread]: Command `dbt run` failed at 08:55:35.173410 after 0.01 seconds
+[0m08:55:35.173816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78b42f5e3190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78b42dd96050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78b42dd96230>]}
+[0m08:55:35.174146 [debug] [MainThread]: Flushing usage events
+[0m08:55:35.197184 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
