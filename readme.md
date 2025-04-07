@@ -22,7 +22,7 @@ cd dbt-tutorial
 
 ### Paso 2: Levantar los Contenedores
 
-Abre una terminal y ejecuta el siguiente comando dentro del directorio del proyecto para iniciar los contenedores:
+Abre una terminal y ejecuta el siguiente comando dentro del directorio "dbt-start" para iniciar los contenedores:
 
 ```bash
 docker compose up --build
