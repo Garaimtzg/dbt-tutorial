@@ -7,7 +7,7 @@ services:
       - ./dbt_tutorial:/dbt_tutorial_project
       - ./profiles.yml:/root/.dbt/profiles.yml
     working_dir: /dbt_tutorial_project
-    command: ["dbt", "build"]
+    command: ["build"] # Se puede cambiar a "run" o "test" por ejemplo
     depends_on:
       db:
         condition: service_healthy
