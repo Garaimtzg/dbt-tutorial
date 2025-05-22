@@ -60,3 +60,26 @@ Una vez que los modelos de DBT se hayan ejecutado, puedes usar **DBeaver** para 
 
 Esto te permitirá verificar las transformaciones aplicadas a los datos y realizar consultas personalizadas para asegurar que todo esté funcionando como se espera.
 
+## ⚙️ **Configuración de la conexión en DBeaver**
+
+Para conectarte a la base de datos en DBeaver, utiliza la siguiente configuración:
+
+- Host: localhost
+
+- Port: 5432
+
+- Database: Adventureworks
+
+- Authentication: Database Native
+
+- Nombre de usuario: postgres
+
+- Contraseña: postgres
+
+1. Abre DBeaver y crea una nueva conexión seleccionando PostgreSQL como tipo de base de datos.
+
+2. Introduce los datos mencionados anteriormente.
+
+3. Haz clic en Test Connection para verificar la conexión.
+
+4. Si todo está correcto, guarda la conexión y comienza a explorar los datos transformados.
